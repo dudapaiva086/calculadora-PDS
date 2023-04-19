@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfAppCalculadoraPds.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppCalculadoraPds"
+        mc:Ignorable="d"
+        Title="Calculadora Simples" Height="800" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="733*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="812*"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="CONTA 1" HorizontalAlignment="Left" Margin="100,95,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="tbConta2" HorizontalAlignment="Left" Margin="208,144,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="31"/>
+        <Label Content="CONTA 2" HorizontalAlignment="Left" Margin="100,144,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="5.914,-3.912" FontSize="16"/>
+        <TextBox x:Name="tbConta1" HorizontalAlignment="Left" Margin="211,99,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.505,0.603" Height="27"/>
+        <Button x:Name="btAdicao" Content="+" HorizontalAlignment="Left" Margin="485,253,0,0" Grid.Row="1" VerticalAlignment="Top" Width="124" Height="42" Click="btMais_Click" FontFamily="Arial Black" Background="#FF8C6598">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btMultiplicacao" Content="*" HorizontalAlignment="Left" Margin="485,175,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.144,1.846" Height="51" Width="120" Click="btMultiplicacao_Click" Background="#FF956FA0"/>
+        <Button x:Name="btSubtracao" Content="-" HorizontalAlignment="Left" Margin="485,314,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="120" Click="btMenos_Click" Background="#FF94789D"/>
+        <Button x:Name="btDivisao" Content="/" HorizontalAlignment="Left" Margin="485,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="123" Height="42" Click="btDivisao_Click" RenderTransformOrigin="0.12,0.515" Background="#FF987BA1"/>
+        <Label Content="RESULTADO FINAL:" HorizontalAlignment="Left" Margin="37,190,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="tbResultado" HorizontalAlignment="Left" Margin="205,191,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False" Height="30"/>
+        <Label x:Name="___Sem_Nome_" Content="CALCULADORA DUDA´S LINA" HorizontalAlignment="Left" Margin="322,33,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Footlight MT Light" Height="36" Width="275" Background="#FF9F54A0" FontSize="20"/>
+
+    </Grid>
+</Window>
